@@ -7,6 +7,7 @@ html(lang='en')
     title Why SO serious?
     link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css')
     link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+    link(rel="stylesheet", href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css")
     link(rel="stylesheet", href="css/...././source/css/style.css",)
     // Copyright © 2016 sChneizel
     // The images hosted on this site is not mine it will be taken down if contacted.
@@ -35,10 +36,10 @@ html(lang='en')
       .section
         .col.s12.m4
           p.light.grey-text.text-lighten-1(style='font-size: 25px')
-            | Site for fun although its kinda boring... <strong style='font-size: 30px;color: #b71c1c'>-__-</strong>
+            | Site for fun although its kinda boring... <strong style='font-size: 30px;color: #b71c1c' data-aos='fade-left' data-aos-duration='3000'>-__-</strong>
             br
-            | Its for all <span style='font-size: 30px; color: #b71c1c;'>:)</span>
-          h3.center.grey-text.text-lighten-1  <strong style='color:#b71c1c'>Wait</strong>.. But is it all we provide?
+            | Its for all <span style='font-size: 30px; color: #b71c1c;' data-aos='fade-left' data-aos-duration='4000'>:)</span>
+          h3.center.grey-text.text-lighten-1  <strong style='color:#b71c1c' data-aos='fade-right'>Wait</strong>.. But is it all we provide?
     .index-banner.parallax-container
       .section.no-pad-bot
         .container
@@ -56,18 +57,19 @@ html(lang='en')
     .container
       .section
         .col.s12.m4
-          p.light.grey-text.text-lighten-1(style='font-size: 25px')
-            |"Meet me on the battle field.. I'll be your sword and shield.. And camoflage.. And you will be <span style='font-size: 30px; color: #b71c1c;'>mine</span>"
-            br
-            |Something to have some interesting time on the wide range of anime for the masses mostly for free though..
+          div(data-aos='fade-right' data-aos-duration='3500')
+            p.light.grey-text.text-lighten-1(style='font-size: 25px')
+              |"Meet me on the battle field.. I'll be your sword and shield.. And camoflage.. And you will be <span style='font-size: 30px; color: #b71c1c;' data-aos='fade-left' data-aos-duration='3000'>mine</span>"
+              br
+              |Something to have some interesting time on the wide range of anime for the masses mostly for free though..
     .index-banner.parallax-container
       .section.no-pad-bot
         .container
           br
           br
-          h1.header.center.red-text.text-darken-4 FREE ME
+          h1.header.center.red-text.text-darken-4(data-aos='fade-up') FREE ME
           br
-          .row.center
+          .row.center(data-aos='fade-up' data-aos-duration='1000')
             a.btn-large.wave-effect.grey.lighten-2(href="https://kissanime.to") <span style="color: #b71c1c;">CLICK!</span>
       .parallax
         img.responsive-img(src="..../../img/redblackanimegirl.jpg", alt="null")
@@ -106,4 +108,5 @@ html(lang='en')
           a.red-text.text-darken-4(href='#') Shuvo
     script(src='https://code.jquery.com/jquery-2.1.4.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js')
+    script(src='https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js')
     script(src="..../../js/init.js")
